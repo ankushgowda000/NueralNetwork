@@ -57,7 +57,7 @@ weight4[2] = 0.55;
 b1 = 0.35;
 b2 = 0.6;
 
-for(_i = 1; _i < 5000; _i++){
+for(_i = 1; _i < 50000; _i++){
     net_input_for_hidden1 = weight1[1] * input[1] + weight2[1] * input[2] + b1 * 1;
     console.log({net_input_for_hidden1});
     net_output_of_hidden1 = 1 / (1 + Math.exp(-net_input_for_hidden1));
